@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+</head>
+<body>
+    <div id="siteContainer"> <!-- site container begins -->
+        <h1 class="hidden">Contact Page</h1>
+        <nav class="navbar"> <!-- nav bar begins -->
+            <div class="navbar_container">
+                <h2 class="hidden">Nav Bar</h2>
+                <a href="/index.html" id="nav_logo">NASH</a>
+                <ul>
+                    <li> <a href="/index.html">Home</a> </li>
+                    <li> <a href="/about.html">About</a> </li>
+                    <li> <a href="/feature.html">Feature</a> </li>
+                    <li> <a href="/portfolio.html">Portfolio</a> </li>
+                    <li> <a href="/">Contact</a> </li>
+                </ul>
+            </div>
+        </nav> <!-- nav bar ends -->
+
+        <div class="team_headshot"> <!--team headshot begins-->
+            <h2 class="hidden">Team Headshots</h2>
+            <div class="team_headshot_img">
+                <img src="images/" alt="Natasha Adler" class="headshot">
+                <img src="images/" alt="Arko Roychowdhury" class="headshot">
+                <img src="images/" alt="Sasha Ahrens" class="headshot">
+                <img src="images/" alt="Hayden Burnell" class="headshot">
+            </div>
+            <div class="team_headshot_text">
+                <p class="headshot_text">Natasha Adler</p>
+                <p class="headshot_text">Arko Roychowdhury</p>
+                <p class="headshot_text">Sasha Ahrens</p>
+                <p class="headshot_text">Hayden Burnell</p>
+            </div>
+        </div><!--team headshot ends-->
+
+        <section class="contact_form_container"> <!--contact form begins-->
+            <h2 class="hidden">Contact Form</h2>
+            <div class="contact_form">
+                <form class="contact_form_details" action="index.html" method="POST">
+                    <h2>Contact Us Here</h2>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+      
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+      
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                  </form>
+                  <button class="btn">Submit</button>
+            </div>
+        </section><!--contact form ends-->
+
+        <footer class="footer"> <!--footer begins -->
+            <h2 class="hidden">Footer</h2>
+            <div class="footer_nav">
+                <ul>
+                    <li> <a href="/">Home</a> </li>
+                    <li> <a href="/about.html">About</a> </li>
+                    <li> <a href="/feature.html">Feature</a> </li>
+                    <li> <a href="/portfolio.html">Portfolio</a> </li>
+                    <li> <a href="/contact.html">Contact</a> </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; NASH DESIGNS 2021</p>
+            </div>
+        </footer> <!-- footer ends -->
+
+    </div> <!-- site container ends -->
+    <script src="js/main.js"></script>
+</body>
+</html>
