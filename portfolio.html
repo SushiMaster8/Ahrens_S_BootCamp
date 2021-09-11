@@ -17,14 +17,19 @@
         <nav class="navbar"> <!-- nav bar begins -->
             <div class="navbar_container">
                 <h2 class="hidden">Nav Bar</h2>
-                <a href="/index.html" id="nav_logo">NASH</a>
-                <ul>
-                    <li> <a href="/index.html">Home</a> </li>
-                    <li> <a href="/about.html">About</a> </li>
-                    <li> <a href="/feature.html">Feature</a> </li>
-                    <li> <a href="/">Portfolio</a> </li>
-                    <li> <a href="/contact.html">Contact</a> </li>
-                </ul>
+                <div class="navbar_logo">
+                   
+                    <a href="/index.html"><img src="images/LogoNash.svg" id="nav_logo" alt="LogoNash"></a>
+                </div>
+                <div class="navbar_menu">
+                    <ul>
+                        <li> <a href="/index.html" class="navbar_menu_item">Home</a> </li>
+                        <li> <a href="/about.html" class="navbar_menu_item">About</a> </li>
+                        <!-- <li> <a href="/feature.html" class="navbar_menu_item">Feature</a> </li> -->
+                        <li> <a href="/portfolio.html" class="navbar_menu_item">Portfolio</a> </li>
+                        <li> <a href="/contact.html" class="navbar_menu_item">Contact</a> </li>
+                    </ul>
+                </div>
             </div>
         </nav> <!-- nav bar ends -->
         <section class="portfolio_gallery"> <!--portfolio gallery begins-->
@@ -41,22 +46,23 @@
             </div>
         </section><!--portfolio gallery ends-->
 
-        <footer class="footer"> <!--footer begins -->
-            <h2 class="hidden">Footer</h2>
+        <footer class="footer_container"> <!--footer begins -->
             <div class="footer_nav">
-                <ul>
-                    <li> <a href="/">Home</a> </li>
-                    <li> <a href="/about.html">About</a> </li>
-                    <li> <a href="/feature.html">Feature</a> </li>
-                    <li> <a href="/portfolio.html">Portfolio</a> </li>
-                    <li> <a href="/contact.html">Contact</a> </li>
-                </ul>
+                <h2 class="hidden">Footer</h2>
+                <div>
+                    <ul class="footer_nav_menu">
+                        <li> <a href="/index.html" class="footer_nav_item">Home</a> </li>
+                        <li> <a href="/about.html" class="footer_nav_item" >About</a> </li>
+                        <li> <a href="/feature.html" class="footer_nav_item">Feature</a> </li>
+                        <li> <a href="/portfolio.html" class="footer_nav_item">Portfolio</a> </li>
+                        <li> <a href="/contact.html" class="footer_nav_item">Contact</a> </li>
+                    </ul>
+                </div>
             </div>
             <div class="copyright">
                 <p>&copy; NASH DESIGNS 2021</p>
             </div>
         </footer> <!-- footer ends -->
-
     </div>  <!-- site container ends -->
     <script src="js/main.js"></script>
 </body>
