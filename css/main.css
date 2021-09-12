@@ -7,8 +7,11 @@
     padding: 0;
 }
 
-.siteContainer{
-    width: 100%;
+#siteContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #6B6E70;
+
 }
 
 .hidden{
@@ -21,6 +24,7 @@ display: none;
 background: #222629;
 height: 180px;
 display: flex;
+max-width: 1200px;
 justify-content: center;
 align-items: center;
 font-size: 1.3rem;
@@ -36,7 +40,6 @@ display: flex;
 justify-content: space-between;
 z-index: 1;
 width: 100%;
-max-width: 1500px;
 margin: 0 auto;
 padding: 0 40px;
 }
@@ -65,11 +68,18 @@ padding: 0 40px;
    
 }
 
+.navbar_menu a:hover {
+    color:  #86C232;
+}
 
 
-
-
-
+/*Main Video*/
+.promoVid
+{
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 50px;
+}
 
 
 
@@ -79,6 +89,7 @@ padding: 0 40px;
     background: #222629;
     height: 180px;
     width: 100%;
+    max-width: 1200px;
     /*change font later */
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -110,6 +121,10 @@ padding: 0 40px;
     padding: 0 5rem;
 }
 
+.footer_nav_item:hover {
+    color:  #86C232;
+}
+
 .copyright{
     font-size: 1rem;
     color: #474b4f;
@@ -117,3 +132,40 @@ padding: 0 40px;
     justify-content: center;
 }
 
+/*FEATURE PAGE*/
+
+.mainPromo
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.featureImage
+{
+    width: 350px;
+    height: 350px;
+}
+
+.secondaryImg1
+{
+    width: 300px;
+    height: 300px;
+}
+
+.secondaryImg2
+{
+    width: 300px;
+    height: 300px;
+}
+
+.secondaryImg3
+{
+    width: 300px;
+    height: 300px;
+}
+
+.secondaryImg4
+{
+    width: 300px;
+    height: 300px;
+}
