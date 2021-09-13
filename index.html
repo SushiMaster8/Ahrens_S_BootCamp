@@ -9,52 +9,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/sasha.css" type="text/css">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
 </head>
 <body>
     <div id="siteContainer"> <!-- site container begins -->
-        <h1 class="hidden">Index Page</h1>
-        <nav class="navbar"> <!-- nav bar begins -->
-            <div class="navbar_container">
-                <h2 class="hidden">Nav Bar</h2>
-                <div class="navbar_logo">
-
-                    <a href="index.html"><img src="images/LogoNash.svg" id="nav_logo" alt="LogoNash"></a>
+        <h1 class="hidden">Home Page</h1>
+        <div class="header">
+                <h2 class="hidden">Header</h2>
+                    <img class="logo" src="images/LogoNash.svg" alt="Main Logo">
+                <div class="mobileNav">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                    <span onclick="openNav()"><img src="images/burger.svg" alt="Hamburger Menu" width="50" height="50"></span>
                 </div>
-                <div class="navbar_menu">
-                    <ul>
-                        <li> <a href="index.html" class="navbar_menu_item">Home</a> </li>
-                        <li> <a href="about.html" class="navbar_menu_item">About</a> </li>
-                        <!-- <li> <a href="feature.html" class="navbar_menu_item">Feature</a> </li> -->
-                        <li> <a href="portfolio.html" class="navbar_menu_item">Portfolio</a> </li>
-                        <li> <a href="contact.html" class="navbar_menu_item">Contact</a> </li>
-                    </ul>
-                </div>
+                <h2 class="hidden">Logo</h2>
+                <nav class="topNav">
+                    <h2 class="hidden">Top Navigation</h2>
+                        <ul>
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="about.html">About</a></li>
+                            <li> <a href="portfolio.html">Portfolio</a></li>
+                            <li> <a href="contact.html">Contact Us</a></li>
+                        </ul>
+                </nav>
             </div>
-        </nav> <!-- nav bar ends -->
+       
+
         <div class="video_player"> <!-- feature video begins -->
             <h2 class="hidden">Video Feature</h2>
                 <video class="promoVid" width="720" controls
                     src="images/promovid_final.mp4">
-                      </video>
+                </video>
 
         </div> <!-- feature video ends -->
         <div class="home_intro"> <!-- home intro text begins -->
             <h2 class="hidden">Intro Text</h2>
-            <p class="intro_text"></p>
+            <p class="introText">Welcome to Nash Designs, a creative team of designers, video editors, 
+                and web designers that are devoted to their craft. This group of
+                creators has the passion to create and the passion to 
+                satisfy our clients with worthwhile projects</p>
         </div> <!-- home intro text ends -->
+        
         <section class="portfolio_home_feature"> <!-- portfolio home feature begins -->
             <h2 class="hidden">Feature Pieces</h2>
-            <div>
-                <a href="feature.html"><img src="" alt="link to feature page" class="portfolio_piece_home"></a>
-                <img src="" alt="" class="portfolio_piece_home">
-                <img src="" alt="" class="portfolio_piece_home">
+            <div class="secondaryContent">
+                <a href="feature.html"><img src="images/featureLink.jpg" alt="link to feature page"></a>
             </div>
-            <div>
-                <p></p>
-            </div>
-        </section> <!-- portfolio home feature ends -->
+            <p>The Ahmedabad re-branding competition was an open design competition for graphic artists and design thinkers. The task was to design a symbol for the city, merchandise, city service apps/websites and stationary for the city's authorities.  The entire design language/color palette was derived from the logo. Interestingly, the logo design exercise was a back and forth process to create a logo that doesn't just represent the city but allow its graphic elements to be used as a recipe for merchandise & stationary design.</p>
+        </section>
+
+        <!-- FOOTER -->
+
         <footer class="footer_container"> <!--footer begins -->
             <div class="footer_nav">
                 <h2 class="hidden">Footer</h2>

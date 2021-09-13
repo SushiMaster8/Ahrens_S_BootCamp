@@ -1,1 +1,702 @@
-Sasha CSS
+/* Main Container */
+
+*{
+    box-sizing: border-box;
+}
+
+.hidden
+{
+    display: none;
+}
+
+#siteContainer
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #6B6E70;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #222629;
+    width: 100%;
+
+}
+
+.logo
+{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header ul
+{
+    display: none;
+}
+
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  background-color: #222629; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #86C232;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.header span
+{
+    padding: 5px;
+}
+
+.header:hover span
+{
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Main Page Content*/
+
+.promoVid
+{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.introText
+{
+    color: #ffffff;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    line-height: 25px;
+    padding: 25px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.secondaryContent
+{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.secondaryContent img
+{
+    transition: transform .5s ease;
+}
+
+.secondaryContent:hover img
+{
+    transform: scale(1.4);
+}
+
+.portfolio_home_feature p 
+{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+/*FOOTER*/
+.footer_container
+{
+    background: #222629;
+    height: 50px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_nav
+{
+    display: none;
+}
+
+.copyright
+{
+    font-size: 1.2rem;
+    color: #474b4f;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*ABOUT THE TEAM PAGE*/
+
+.team_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.team_box_hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.team_box_hero:hover{
+    opacity:0.6
+}
+
+.team_box_js{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.team_box_images{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: min-content;
+    /* border-radius: 10px; */
+    margin: 50px;
+}
+
+.team_box_bio{
+    display: flex;
+    margin: 70px 50px;
+    /* change font family */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    color: white;
+}
+
+
+
+/*IPAD SIZING*/
+
+@media screen and (min-width: 650px) {
+
+#siteContainer
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #6B6E70;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #222629;
+    width: 100%;
+
+}
+
+.logo
+{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header ul
+{
+    display: none;
+}
+
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  background-color: #222629; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #86C232;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.header span
+{
+    padding: 5px;
+}
+
+.header:hover span
+{
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Main Page Content*/
+
+.promoVid
+{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.introText
+{
+    color: #ffffff;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    font-size: 26px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    line-height: 25px;
+    padding: 25px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.secondaryContent
+{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.secondaryContent img
+{
+    transition: transform .5s ease;
+}
+
+.secondaryContent:hover img
+{
+    transform: scale(1.4);
+}
+
+.portfolio_home_feature p 
+{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+/*FOOTER*/
+.footer_container
+{
+    background: #222629;
+    height: 50px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_nav
+{
+    display: none;
+}
+
+.copyright
+{
+    font-size: 1.2rem;
+    color: #474b4f;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*ABOUT THE TEAM PAGE*/
+
+.team_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.team_box_hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 350px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.team_box_hero:hover{
+    opacity:0.6
+}
+
+.team_box_js{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.team_box_images{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: min-content;
+    /* border-radius: 10px; */
+    margin: 50px;
+}
+
+.team_box_bio{
+    display: flex;
+    margin: 70px 50px;
+    /* change font family */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: white;
+}
+
+team_box_bio p
+{
+	font-size: 15px;
+}
+
+}
+
+
+
+/*Desktop Edit*/
+
+@media screen and (min-width: 900px) {
+
+#siteContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #6B6E70;
+
+}
+
+/*HEADER*/
+.header
+{
+display: flex;
+flex-direction: row;
+background: #222629;
+height: 180px;
+max-width: 1200px;
+font-size: 1.3rem;
+/*change this font family*/
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobileNav
+{
+    display: none;
+}
+
+.logo
+{
+    display: flex;
+    margin-left: 0px;
+    margin-right: 400px;
+}
+
+.topNav a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.topNav li
+{
+	margin-top: 8px;
+}
+
+.topNav a:hover
+{
+    color: #86C232;
+}
+
+.topNav ul 
+{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 40px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+/*Main Page Content*/
+
+.promoVid
+{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/* FOOTER */
+
+.footer_container{
+    background: #222629;
+    height: 180px;
+    width: 100%;
+    max-width: 1200px;
+    /*change font later */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    }
+
+
+
+.footer_nav_menu{
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer_nav_item{
+    color: #6b6e70;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+}
+
+.footer_nav_item:hover {
+    color:  #86C232;
+}
+
+.copyright{
+    font-size: 1rem;
+    color: #474b4f;
+    display: flex;
+    justify-content: center;
+}
+
+/*Main Page Content*/
+
+.promoVid
+{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.introText
+{
+    color: #ffffff;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    line-height: 45px;
+    padding: 25px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+}
+
+.secondaryContent
+{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.secondaryContent img
+{
+    transition: transform .5s ease;
+}
+
+.secondaryContent:hover img
+{
+    transform: scale(1.4);
+}
+
+.portfolio_home_feature p 
+{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+}
+
+/*ABOUT THE TEAM PAGE*/
+
+.team_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.team_box_hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 500px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.team_box_hero:hover{
+    opacity:0.6
+}
+
+.team_box_js{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.team_box_images{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: min-content;
+    /* border-radius: 10px; */
+    margin: 50px;
+}
+
+.team_box_bio{
+    display: flex;
+    margin: 70px 50px;
+    /* change font family */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+}
+
+
+
+/*FEATURE PAGE*/
+
+.mainPromo
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.featureImage
+{
+    width: 350px;
+    height: 350px;
+}
+
+.secondaryImg1
+{
+    width: 300px;
+    height: 300px;
+}
+
+.secondaryImg2
+{
+    width: 300px;
+    height: 300px;
+}
+
+.secondaryImg3
+{
+    width: 300px;
+    height: 300px;
+}
+
+.secondaryImg4
+{
+    width: 300px;
+    height: 300px;
+}
