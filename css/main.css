@@ -90,6 +90,51 @@ padding: 0 40px;
     padding: 0;
 }
 
+.team_box{
+    display: flex;
+    justify-content: center;
+}
+
+.team_box_hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.team_box_hero:hover{
+    opacity:0.6
+}
+
+.team_box_js{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.team_box_images{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: min-content;
+    /* border-radius: 10px; */
+    margin: 50px;
+}
+
+.team_box_bio{
+    display: flex;
+    margin: 70px 50px;
+    /* change font family */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+}
+
 
 .portHeading{
   font-family: 'Teko', helvetica, sans-serif;
