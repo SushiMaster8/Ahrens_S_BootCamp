@@ -35,26 +35,30 @@
     margin-bottom: 15px;
 }
 
-.header ul
+.header ul a
 {
-    display: none;
+  font-family: 'teko', helvetica, sans-serif;
+  font-size: 24px;
 }
 
 
 .sidenav {
-  height: 100%; 
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   right: 0;
-  background-color: #222629; 
+  background-color: #222629;
   overflow-x: hidden;
-  padding-top: 60px; 
-  transition: 0.5s; 
+  padding-top: 60px;
+  transition: 0.5s;
+
 }
 
 .sidenav a {
+
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -105,7 +109,8 @@
     color: #ffffff;
     margin-top: 75px;
     margin-bottom: 75px;
-    font-size: 20px;
+    font-family: 'Teko', helvetica, sans-serif;
+    font-size: 24px;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
@@ -133,11 +138,19 @@
     transform: scale(1.4);
 }
 
-.portfolio_home_feature p 
+.portfolio_home_feature h2{
+  color: #fff;
+  font-family: 'teko', helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.portfolio_home_feature p
 {
+  font-family: 'kito', helvetica, sans-serif;
+  font-size: 24px;
     color: #fff;
     font-size: 14px;
-    text-align: center;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 25px;
@@ -149,12 +162,13 @@
     background: #222629;
     height: 50px;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.footer_nav
+.footer_nav ul li a
 {
-    display: none;
+  font-family: 'teko', helvetica, sans-serif;
+  font-size: 28px;
 }
 
 .copyright
@@ -163,7 +177,7 @@
     color: #474b4f;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 /*ABOUT THE TEAM PAGE*/
@@ -207,10 +221,14 @@
     display: flex;
     margin: 70px 50px;
     /* change font family */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.5rem;
+
     line-height: 1rem;
     color: white;
+}
+
+.team_box p{
+  font-family: 'Teko', helvetica, sans-serif;
+  font-size: 24px;
 }
 
 
@@ -252,16 +270,16 @@
 
 
 .sidenav {
-  height: 100%; 
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   right: 0;
-  background-color: #222629; 
+  background-color: #222629;
   overflow-x: hidden;
-  padding-top: 60px; 
-  transition: 0.5s; 
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
 .sidenav a {
@@ -343,7 +361,7 @@
     transform: scale(1.4);
 }
 
-.portfolio_home_feature p 
+.portfolio_home_feature p
 {
     color: #fff;
     font-size: 20px;
@@ -487,7 +505,7 @@ font-family: Arial, Helvetica, sans-serif;
     color: #86C232;
 }
 
-.topNav ul 
+.topNav ul
 {
     display: flex;
     flex-direction: column;
@@ -602,7 +620,7 @@ font-family: Arial, Helvetica, sans-serif;
     transform: scale(1.4);
 }
 
-.portfolio_home_feature p 
+.portfolio_home_feature p
 {
     color: #fff;
     font-size: 22px;

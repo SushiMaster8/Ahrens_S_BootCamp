@@ -8,6 +8,9 @@
 
 }
 
+
+
+
 #siteContainer {
     margin: 0 auto;
     max-width: 1200px;
@@ -31,10 +34,18 @@ justify-content: center;
 align-items: center;
 font-size: 1.3rem;
 /*change this font family*/
-font-family: Arial, Helvetica, sans-serif;
+
 position: sticky;
 top: 0;
 z-index: 999;
+}
+
+.navbar ul a
+{
+  font-family: 'teko', helvetica, sans-serif;
+  font-size: 28px;
+  margin-right: 78px;
+  margin-top: 80px;
 }
 
 .navbar_container{
@@ -42,7 +53,7 @@ display: flex;
 justify-content: space-between;
 z-index: 1;
 width: 100%;
-margin: 0 auto;
+
 padding: 0 40px;
 }
 
@@ -73,6 +84,8 @@ padding: 0 40px;
 .navbar_menu a:hover {
     color:  #86C232;
 }
+
+
 
 
 /*Main Video*/
