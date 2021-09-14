@@ -266,6 +266,90 @@ padding: 0 40px;
   flex-direction: row;
 }
 
+.team_headshot_img img{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.team_headshot_text {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Teko', helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+
+}
+.team_headshot_text p{
+  margin-top: 20px;
+  margin-left: 83px;
+}
+
+.contactWrap
+{
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row
+
+}
+
+.formWrap
+{
+
+  height: 100%;
+  margin: 40px 40px 40px 40px;
+
+
+}
+
+
+
+input[type=submit]
+{
+font-family: 'teko', Arial, sans-serif;
+border-radius: 28px;
+font-size: 24px;
+padding: 10px;
+cursor: pointer;
+margin-top:30px;
+margin-left: 200px;
+background-color: #04306A;
+color: white;
+
+
+}
+
+.formWrap h2
+{
+  font:  32px 'teko', Arial, sans-serif;
+  color: #04306A;
+  margin-bottom: 20px;
+}
+
+.formWrap p
+{
+  font-family: 'kito', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+
+}
+
+#contactForm
+{
+  font-family: 'kito', Arial, sans-serif;
+  font-size: 20px;
+  color:	#fff;
+  margin-bottom: 30px;
+
+}
+
+
+
 @media screen and (max-width: 768px) {
   .mainPromo{
     margin: 0px 50px 25px 50px;
