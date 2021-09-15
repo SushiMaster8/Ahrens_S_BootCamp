@@ -458,6 +458,7 @@ team_box_bio p
     flex-direction: column;
     margin: 0 auto;
     max-width: 1200px;
+    height: auto;
     background-color: #6B6E70;
 
 }
@@ -530,6 +531,10 @@ font-family: Arial, Helvetica, sans-serif;
 /* FOOTER */
 
 .footer_container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 25px;
     background: #222629;
     height: 180px;
     width: 100%;
@@ -633,49 +638,102 @@ font-family: Arial, Helvetica, sans-serif;
 
 /*ABOUT THE TEAM PAGE*/
 
-.team_box{
-    display: flex;
-    flex-direction: column;
+.profile
+{
+  width: 1000px;
+  height: 300px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
 }
 
-.team_box_hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-height: 500px;
-    cursor: pointer;
-    opacity: 1;
-    transition: 0.3s;
-}
-
-.team_box_hero:hover{
+.profile:hover {
     opacity:0.6
 }
 
-.team_box_js{
-    display: flex;
-    align-items: left;
-    justify-content: left;
+.nashImages
+{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 25px;
+  background: none;
+  border: none;
 }
 
-.team_box_images{
-    display: flex;
-    align-items: center;
-    width: 300px;
-    height: min-content;
-    /* border-radius: 10px; */
-    margin: 50px;
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 5px solid #61892F;
+  border radius: 10px;
+  z-index: 10;
+  background-color: #222629;
+  color: white;
+  width: 800px;
+  max-width: 80%;
 }
 
-.team_box_bio{
-    display: flex;
-    margin: 70px 50px;
-    /* change font family */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    color: white;
+.modal.active {
+  transform: translate(-50%, -50%);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header img{
+  width: 200px;
+  height: 200px;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.memberName {
+  padding: 10px 15px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  font-size: 1.3rem;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 
