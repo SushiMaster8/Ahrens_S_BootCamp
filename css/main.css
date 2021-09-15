@@ -164,70 +164,69 @@ padding: 0 40px;
   padding: 20px;
 }
 
-.portWrap{
-	display:grid;
+.portCon {
+  display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   width: 1200px;
-}
-
-.portCon
-{
-
-	display: flex;
-
-	flex-direction: column;
-	background: #6B6E70;
 
 }
 
-.port /* container */
-{
-	display:block;
-	width:100%;
-	height:100%;
-
-
-
+.port{
+  position: relative;
+  width: 400px;
+  margin-left: 50px;
 }
 
-.port img
-{
-
-  margin-top: 25px;
-	margin-left: 75px;
+.image {
+  opacity: 1;
+  display: block;
   width: 50%;
   height: auto;
-
-
-
-
-}
-
-
-.port:hover{
-  opacity: 50%;
-  cursor: pointer;
-}
-
-.port p
-{
-  display: flex;
-  flex-direction: row;
-	color: #fff;
-  font-family: 'Teko', helvetica, sans-serif;
-  font-size: 24px;
-  margin-bottom: 25px;
-	line-height: 20px;
-  margin-left: 95px;
-  margin-right: 100px;
-  margin-top: 10px;
-
-
+  transition: .5s ease;
+  backface-visibility: hidden;
   margin-bottom: 40px;
-  text-align: center;
-
 }
 
+
+.image--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image-mainBack {
+    background: #009578;
+}
+
+.image > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portCon:hover .image {
+  opacity: 0.3;
+}
+
+.portCon:hover .middle {
+  opacity: 0.7;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-family: 'kito', Arial, sans-serif;
+  font-size: 16px;
+  margin-right: 200px;
+
+}
 /* Styles for Feature Page ONLY */
 
 .projectHeader {
