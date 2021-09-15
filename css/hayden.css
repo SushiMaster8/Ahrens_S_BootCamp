@@ -38,16 +38,26 @@ display: none;
   color: #FFFAFA;
 }
 
+.featext{
+  font-family: 'Kiro', helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+  color: #FFFAFA;
+}
+
 .portmainPromo {
   margin: 0px 150px 100px 150px;
   padding-top: 100px;
-  display: flex;
-  flex-direction: row;
+  display: inline;
+  text-align: center;
 
 }
 
 .portImage{
-  margin-left: 100px;
+  width: auto;
+  margin-left: 285px;
+  margin-bottom: 50px;
   display: inline;
 
 }
@@ -166,8 +176,8 @@ color: white;
   .portmainPromo{
     margin: 0px 50px 25px 50px;
     padding-top: 25px;
-    display: flex;
-    flex-direction: row;
+    display: inline;
+    text-align: center;
   }
 
   .portprojectHeader {
@@ -182,7 +192,10 @@ color: white;
   }
 
   .portImage{
-    margin-left: 40px;
+    width: 40%;
+    height: auto;
+    display: inline-flex;
+
   }
 
   .portfolio_2_img{
@@ -267,8 +280,8 @@ color: white;
   .portmainPromo{
     margin: 30px 35px 15px 35px;
     padding-top: 15px;
-    display: flex;
-    flex-direction: column;
+    display: inline;
+    text-align: center;
   }
 
   .portImage{
