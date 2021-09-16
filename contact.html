@@ -6,76 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="https://use.typekit.net/xmp8rmx.css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/sasha.css" type="text/css">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
 </head>
 <body>
     <div id="siteContainer"> <!-- site container begins -->
-        <h1 class="hidden">Contact Page</h1>
-        <nav class="navbar"> <!-- nav bar begins -->
-            <div class="navbar_container">
-                <h2 class="hidden">Nav Bar</h2>
-                <div class="navbar_logo">
-
-                    <a href="index.html"><img src="images/LogoNash.svg" id="nav_logo" alt="LogoNash"></a>
+        <div class="header">
+                <h2 class="hidden">Header</h2>
+                    <img class="logo" src="images/LogoNash.svg" alt="Main Logo">
+                <div class="mobileNav">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                    <span onclick="openNav()"><img src="images/burger.svg" alt="Hamburger Menu" width="50" height="50"></span>
                 </div>
-                <div class="navbar_menu">
-                    <ul>
-                        <li> <a href="index.html" class="navbar_menu_item">Home</a> </li>
-                        <li> <a href="about.html" class="navbar_menu_item">About</a> </li>
-                        <!-- <li> <a href="feature.html" class="navbar_menu_item">Feature</a> </li> -->
-                        <li> <a href="portfolio.html" class="navbar_menu_item">Portfolio</a> </li>
-                        <li> <a href="contact.html" class="navbar_menu_item">Contact</a> </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> <!-- nav bar ends -->
+                <h2 class="hidden">Logo</h2>
+                <nav class="topNav">
+                    <h2 class="hidden">Top Navigation</h2>
+                        <ul>
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="about.html">About</a></li>
+                            <li> <a href="portfolio.html">Portfolio</a></li>
+                            <li> <a href="contact.html">Contact Us</a></li>
+                        </ul>
+                </nav>
+        </div>
 
-        <div class="team_headshot"> <!--team headshot begins-->
-       <h2 class="hidden">Team Headshots</h2>
-       <div class="team_headshot_img">
-           <img src="images/natashaHeadshot.png" alt="Natasha Adler" class="headshot" height="210">
-           <img src="images/arkoHeadshot.png" alt="Arko Roychowdhury" class="headshot" height="210">
-           <img src="images/sashaHeadshot.png" alt="Sasha Ahrens" class="headshot" height="210">
-           <img src="images/haydenHeadshot.png" alt="Hayden Burnell" class="headshot" height="210">
-       </div>
-       <div class="team_headshot_text">
+    <div class="team_headshots"> <!--team headshot begins-->
+    <h2 class="hidden">Team Headshots</h2>
+       <div class="headshotNat">
+           <img src="images/natashaHeadshot.png" alt="Natasha Adler" class="headshot">
            <p class="headshot_text">Natasha Adler</p>
+        </div>
+        <div class="headshotArko">
+           <img src="images/arkoHeadshot.png" alt="Arko Roychowdhury" class="headshot">
            <p class="headshot_text">Arko Roychowdhury</p>
+        </div>
+        <div class="headshotSasha">
+           <img src="images/sashaHeadshot.png" alt="Sasha Ahrens" class="headshot">
            <p class="headshot_text">Sasha Ahrens</p>
+        </div>
+        <div class="headshotHayden">
+           <img src="images/haydenHeadshot.png" alt="Hayden Burnell" class="headshot">
            <p class="headshot_text">Hayden Burnell</p>
        </div>
    </div>
 
-        <div class="contactWrap">
-            <h2 class="hidden">Map</h2>
-            <div class="formWrap">
-                <h2>Contact Us!</h2>
-                <p>Have Questions?
-              Fill out the form below and we will get back to you as soon as possible!</p>
-              <form id="contactForm" action="form.php" method="post">
-                    <label for="name">Name: (required)</label>
-                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
-
-                    <br>
-
-                    <label for="email">Email: (will not be published)</label>
-                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
-
-                    <br>
-
-                    <label for="comments">Type your message here:</label>
-                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
-
-                    <br>
-
-
-                    <input id="submit" type="submit" value="Submit">
+    <div id="contact-form">
+        <h3 class="hidden">Form</h3>
+            <form action="form.php" method="post">
+                <label for="name">Name: (required)</label>
+                <input class="name" type="text" required id="name">
+            <br>
+                <div class="emailFull">
+                <label class="Etext" for="email">Email:</label>
+                <input class="Email" type="email" required id="email">
+                </div>
+            <br>
+                <div class="phoneFull">
+                <label for="phone">Phone: (required)</label>
+                <input class="telePhone" type="tel" required id="phone">
+                </div>
+            <br>
+                <label class="commentLabel" for="comments">Type Your Message Here</label>
+                <textarea class="comments" required></textarea>
+            <br>
+                <input class="formButton" type="submit" value="Submit">
             </form>
-        </div>
-
-
-
     </div>
 
         <footer class="footer_container"> <!--footer begins -->

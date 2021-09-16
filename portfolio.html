@@ -13,25 +13,30 @@
 </head>
 <body>
     <div id="siteContainer"> <!-- site container begins -->
-        <h1 class="hidden">Portfolio Page</h1>
-        <nav class="navbar"> <!-- nav bar begins -->
-            <div class="navbar_container">
-                <h2 class="hidden">Nav Bar</h2>
-                <div class="navbar_logo">
-
-                    <a href="index.html"><img src="images/LogoNash.svg" id="nav_logo" alt="LogoNash"></a>
+        <div class="header">
+                <h2 class="hidden">Header</h2>
+                    <img class="logo" src="images/LogoNash.svg" alt="Main Logo">
+                <div class="mobileNav">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                    <span onclick="openNav()"><img src="images/burger.svg" alt="Hamburger Menu" width="50" height="50"></span>
                 </div>
-                <div class="navbar_menu">
-                    <ul>
-                        <li> <a href="index.html" class="navbar_menu_item">Home</a> </li>
-                        <li> <a href="about.html" class="navbar_menu_item">About</a> </li>
-                        <!-- <li> <a href="/feature.html" class="navbar_menu_item">Feature</a> </li> -->
-                        <li> <a href="portfolio.html" class="navbar_menu_item">Portfolio</a> </li>
-                        <li> <a href="contact.html" class="navbar_menu_item">Contact</a> </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> <!-- nav bar ends -->
+                <h2 class="hidden">Logo</h2>
+                <nav class="topNav">
+                    <h2 class="hidden">Top Navigation</h2>
+                        <ul>
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="about.html">About</a></li>
+                            <li> <a href="portfolio.html">Portfolio</a></li>
+                            <li> <a href="contact.html">Contact Us</a></li>
+                        </ul>
+                </nav>
+        </div>
 
       <h1 class="portHeading">Check out some amazing previous NASH Designs Projects! <br>Hover over the image for description</h1>
 
