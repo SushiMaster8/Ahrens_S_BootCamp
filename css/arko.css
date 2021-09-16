@@ -1,29 +1,6 @@
 /* Styles for Feature Page ONLY */
 
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
-
-
-
-
-#siteContainer {
-    margin: 0 auto;
-    max-width: 1200px;
-    background-color: #6B6E70;
-
-}
-
-
-.hidden{
-display: none;
-}
-
-.portprojectHeader {
+.projectHeader {
   font-family: 'Teko', helvetica, sans-serif;
   font-size: 28px;
   font-weight: bold;
@@ -31,41 +8,32 @@ display: none;
   color: #FFFAFA;
 }
 
-.portprojectPara {
+.projectPara {
   font-family: 'Kiro', helvetica, sans-serif;
   font-size: 22px;
   margin-bottom: 18px;
   color: #FFFAFA;
 }
 
-.featext{
-  font-family: 'Kiro', helvetica, sans-serif;
-  font-size: 18px;
-  margin-top: 50px;
-  color: #FFFAFA;
-}
-
-.portmainPromo {
+.mainPromo {
   margin: 0px 150px 100px 150px;
   padding-top: 100px;
-  display: inline;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
 
 }
 
-.portImage{
-  width: auto;
-  margin-left: 285px;
-  margin-bottom: 50px;
+.featureImage{
+  margin-left: 100px;
   display: inline;
 
 }
 
-.portfolio_2 {
+.portfolio_feature2 {
 
 }
 
-.portfolio_2_img{
+.portfolio_feature2_img{
   margin: 0px 100px 50px 100px;
   display: flex;
   flex-direction: row;
@@ -73,63 +41,6 @@ display: none;
   justify-content: center;
 }
 
-.team_headshot_img img{
-  margin-top: 30px;
-  margin-left: 70px;
-}
-
-.team_headshot_text {
-  display: flex;
-  flex-direction: row;
-  font-family: 'Teko', helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
-
-}
-.team_headshot_text p{
-  margin-top: 20px;
-  margin-left: 83px;
-}
-
-
-
-
-/* MEDIA FOR TABLET */
-@media screen and (max-width: 768px) {
-  .portmainPromo{
-    margin: 0px 50px 25px 50px;
-    padding-top: 25px;
-    display: inline;
-    text-align: center;
-  }
-
-  .portprojectHeader {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 12px;
-  }
-
-  .portprojectPara {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  .portImage{
-    width: 40%;
-    height: auto;
-    display: inline-flex;
-
-  }
-
-  .portfolio_2_img{
-    margin: 0px 50px 25px 50px;
-    display: flex;
-    flex-direction: row;
-  }
-
-
-}/* end of media for Tablet */
 
 /* FUNCTIONS FOR SECONDARY IMAGES HOVER */
 .seconImage {
@@ -199,34 +110,80 @@ display: none;
 }
 /* FUNCTIONS FOR SECONDARY IMAGES HOVER ENDS*/
 
-/* FUNCTIONS FOR MOBILE*/
-@media screen and (max-width: 428px) {
-  .portmainPromo{
-    margin: 30px 35px 15px 35px;
-    padding-top: 15px;
-    display: inline;
-    text-align: center;
+/* MEDIA FOR TABLET */
+@media screen and (max-width: 768px) {
+  .mainPromo{
+    margin: 0px 50px 25px 50px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
   }
 
-  .portImage{
+  .projectHeader {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  .projectPara {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .featureImage{
+    margin-left: 40px;
+  }
+
+  .portfolio_feature2_img{
+    margin: 0px 50px 25px 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image_head {
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .image_text {
+      font-size: 14px;
+      margin: 5px 10px 10px 10px;
+
+  }
+
+
+}/* end of media for Tablet */
+
+
+
+/* FUNCTIONS FOR MOBILE*/
+@media screen and (max-width: 428px) {
+  .mainPromo{
+    margin: 30px 35px 15px 35px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featureImage{
     margin-left: 0px;
     margin-top: 25px;
     display: block;
 
   }
 
-  .portprojectHeader {
+  .projectHeader {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 12px;
   }
 
-  .portprojectPara {
+  .projectPara {
     font-size: 16px;
     margin-bottom: 10px;
   }
 
-  .portfolio_2_img{
+  .portfolio_feature2_img{
     margin: 0px 15px 15px 15px;
     padding-left: 35px;
     display: flex;
